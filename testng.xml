@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+<listeners>
+  <listener class-name="listeners.ListenerTest.java"/>
+</listeners>
+
+ <parameter name = "URL"  value= "www.duckduckgo.com">  
+ // you can have another parameter here is well
+ 
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="parameterization_pkg.H_Watching_parameterization"/>
+      <class name="parameterization_pkg.I_Watching_parameterization"/>
+      <class name="parameterization_pkg.D_Sport_parameterization"/>
+      <class name="parameterization_pkg.A_Reading_parameterization"/>
+      <class name="parameterization_pkg.E_Sport_parameterization"/>
+      <class name="parameterization_pkg.C_Reading_parameterization"/>
+      <class name="parameterization_pkg.G_Watching_parameterization"/>
+      <class name="parameterization_pkg.F_Sport_parameterization"/>
+      <class name="parameterization_pkg.B_Reading_parameterization"/>
+    </classes>
+  </test> <!-- Test -->
+ </parameter>
+</suite> <!-- Suite -->

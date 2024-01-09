@@ -1,0 +1,12 @@
+Data should never ever be hardcoded whatsoever !
+
+Data should be centralized and fed to the code. This can be achieved via 3 ways:
+
+	A- .properties class file.
+	B- Parameterizing the data from the TestNg xml file:
+		1- From the suite level (If data applies to all .java class files across the entire project).
+		2- From a test folder (That is a shell/module) level where data is applicable to only these .java class files under such a test folder.
+		3- From the method level utilizing @dataprovider anotation (When a set of data is fed to the same testcase/method to run it multiple times)
+		
+		
+		Here I'm demonstrating #2
